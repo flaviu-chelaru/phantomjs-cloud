@@ -13,6 +13,7 @@ class RequestSettings
      * Type declaration
      * password: string
      * userName: string
+     * TODO Make an object to represent the data
      *
      * @var array
      */
@@ -53,7 +54,7 @@ class RequestSettings
      * They will be sent to the server for every request issued (the page and resources).
      * !IMPORTANT! Unicode is not supported (ASCII only)
      *
-     * @var array[]
+     * @var array
      */
     public $customHeaders;
 

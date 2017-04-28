@@ -26,7 +26,7 @@ class UrlSettings
     public $encoding = 'utf8';
 
     /**
-     * custom headers for the taret page. if you want to set headers for every sub-resource requested,
+     * custom headers for the target page. if you want to set headers for every sub-resource requested,
      * use the pageRequest.requestSettings.customHeaders parameter instead.
      *
      * @var array

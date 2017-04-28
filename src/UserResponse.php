@@ -10,6 +10,7 @@ class UserResponse
 {
     /**
      * the rendered output of the last pageRequest
+     * TODO Make an object to represent the data
      *
      * @var array
      */
@@ -17,6 +18,7 @@ class UserResponse
 
     /**
      * metadata about the transaction
+     * TODO Make an object to represent the data
      *
      * @var array
      */
