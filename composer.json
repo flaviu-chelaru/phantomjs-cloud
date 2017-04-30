@@ -1,7 +1,8 @@
 {
   "name": "cfv1000/phantomjs-cloud",
-  "description": "PhantomJS Cloud API based on Guzzle",
+  "description": "PhantomJS Cloud API wrapper",
   "type": "library",
+  "license": "MIT",
   "require": {
   },
   "authors": [
