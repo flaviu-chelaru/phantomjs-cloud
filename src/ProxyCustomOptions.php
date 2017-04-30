@@ -27,7 +27,9 @@ class ProxyCustomOptions
     public $host;
 
     /**
-     * type of the proxy server. default is http available types are http, socks5, and none
+     * type of the proxy server.
+     * default is http
+     * available types are http, socks5, and none
      *
      * @var string
      */

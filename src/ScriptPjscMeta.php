@@ -14,19 +14,19 @@ class ScriptPjscMeta
      *
      * @var boolean
      */
-    public $forceFinish;
+    public $forceFinish = false;
 
     /**
      * set to false by default. if true, will delay rendering until you set it back to false. good if you are waiting on an AJAX event.
      *
      * @var boolean
      */
-    public $manualWait;
+    public $manualWait = false;
 
     /**
      * allows you to override specific pageRequest options with values you compute in your script (based on the document at runtime)
      *
-     * @var ClipRectangleOptions[]
+     * @var ClipRectangleOptions
      */
     public $optionsOverrides;
 

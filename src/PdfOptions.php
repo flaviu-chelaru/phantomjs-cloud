@@ -24,10 +24,11 @@ class PdfOptions
      * Border is optional and defaults to 0.
      * A non-uniform border can be specified in the form {left: '2cm', top: '2cm', right: '2cm', bottom: '3cm'}
      * Use of px is strongly recommended.
+     * TODO Build an object to represent the data
      *
      * @var int|array
      */
-    public $border;
+    public $border = 0;
 
     /**
      * set the DPI for pdf generation.

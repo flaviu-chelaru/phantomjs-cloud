@@ -10,7 +10,7 @@ class PdfHeaderFooter
 {
     /**
      * if specified, this is used for the first page (instead of the repeating)
-     * @var stringw
+     * @var string
      */
     public $firstPage;
 

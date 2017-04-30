@@ -33,24 +33,37 @@ class UserRequest
      * beta: the latest backend we are testing (phantomjs v2.5b).
      *
      * You can also specify an exact backend: phantom 2.1.1 or phantom 2.5beta.
-     *
+     * TODO add constants for possible values
      * @var
      */
-    public $backend;
+    public $backend = 'default';
 
     /**
      * setting this forces the value of the outputAsJson parameter, regardless of what the last page's value of outputAsJson was set to. default is undefined.
      *
      * @var boolean
      */
-    public $outputAsJSON;
+    public $outputAsJSON = false;
+
+    /**
+     * UserRequest constructor.
+     * @param null|PageRequest|string $pageRequest
+     */
+    public function __construct($pageRequest = null)
+    {
+        if ($pageRequest instanceof PageRequest) {
+            $this->addPageRequest($pageRequest);
+        } elseif ($pageRequest !== null) {
+            $this->addPageRequest(new PageRequest($pageRequest));
+        }
+    }
 
     /**
      * @param PageRequest $page
      *
      * @return int
      */
-    public function addPage(PageRequest $page)
+    public function addPageRequest(PageRequest $page)
     {
         return array_push($this->pages, $page);
     }

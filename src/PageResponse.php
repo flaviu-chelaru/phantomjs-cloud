@@ -54,7 +54,7 @@ class PageResponse
     public $pageRequest;
 
     /**
-     * @var any
+     * @var
      */
     public $scriptOutput;
 

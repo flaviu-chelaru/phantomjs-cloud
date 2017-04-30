@@ -40,7 +40,7 @@ class PageRequest
      * required. the target page you wish to load
      * @var string
      */
-    public $url;
+    protected $url;
 
     /**
      * if specified, will be used as the content of the page you are loading (no network request will be made for the url).
@@ -74,7 +74,7 @@ class PageRequest
      *
      * @var string
      */
-    public $renderType;
+    public $renderType = self::RENDER_TYPE_JPEG;
 
     /**
      * adjustable parameters for when making network requests to the url specified

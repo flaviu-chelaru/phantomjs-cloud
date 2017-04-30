@@ -3,6 +3,8 @@
 /**
  * Class Cookie
  * @package PhantomJS
+ *
+ * @see http://php.net/manual/ro/function.setcookie.php
  */
 class Cookie
 {

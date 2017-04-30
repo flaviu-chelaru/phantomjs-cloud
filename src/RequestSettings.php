@@ -131,7 +131,7 @@ class RequestSettings
      *
      * @var int
      */
-    public $waitInterval;
+    public $waitInterval = 1000;
 
     /**
      * set to true to enable web security. default is false

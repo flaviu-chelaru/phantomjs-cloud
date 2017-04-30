@@ -1,20 +1,19 @@
 {
-    "name": "cfv1000/phantomjs-cloud",
-    "description": "PhantomJS Cloud API based on Guzzle",
-    "type": "library",
-    "require": {
-        "guzzlehttp/guzzle": "^6.2"
-    },
-    "authors": [
-        {
-            "name": "Flaviu Chelaru",
-            "email": "flaviu.chelaru@gmail.com"
-        }
-    ],
-	"autoload": {
-		"psr-4": {
-			"PhantomJS\\" : "src/"
-		}
-	},
-    "minimum-stability": "stable"
+  "name": "cfv1000/phantomjs-cloud",
+  "description": "PhantomJS Cloud API based on Guzzle",
+  "type": "library",
+  "require": {
+  },
+  "authors": [
+    {
+      "name": "Flaviu Chelaru",
+      "email": "flaviu.chelaru@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PhantomJS\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
 }
