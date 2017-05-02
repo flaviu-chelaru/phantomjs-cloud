@@ -43,7 +43,7 @@ class UserRequest extends AbstractRequest
      *
      * @var boolean
      */
-    public $outputAsJSON = false;
+    public $outputAsJSON;
 
     /**
      * UserRequest constructor.
