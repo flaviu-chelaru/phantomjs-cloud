@@ -6,7 +6,7 @@
  * hey are loaded in-orrder, and only the last one is rendered. All variables except 'url' are optional.
  * @package PhantomJS
  */
-class PageRequest
+class PageRequest extends AbstractRequest
 {
     /**
      * Returns HTML response

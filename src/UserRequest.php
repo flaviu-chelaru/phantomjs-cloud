@@ -6,7 +6,7 @@
  *
  * @package PhantomJS
  */
-class UserRequest
+class UserRequest extends AbstractRequest
 {
     /**
      * array of pages you want to load, in order. Only the last successfully loaded page will be rendered.
