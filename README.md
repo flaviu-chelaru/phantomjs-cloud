@@ -2,9 +2,21 @@
 
 A library to interact with the Phantom JS Cloud
 
-The library will generate the JSON Object. This object can be later sent as a HTTP Request with Guzzle or other HTTP Client for PHP.
+Examples and extensive documentation on the API
+https://phantomjscloud.com/docs/http-api/
 
-The library does not make HTTP requests - this library only generates the JSON you can use as a payload when you make your HTTP requests.
+### Simple example
+
+Write the webpage to a JPG file:
+
+```php
+
+include_once 'vendor/autoload.php';
+
+$request = new \PhantomJS\PageRequest('http://www.example.com');
+file_put_contents('example.com.jpg', $request->getResponse());
+
+```
 
 ### TODO - What we plan next for this code
 * find a general way to generate the JSON with out the NULL arguments
